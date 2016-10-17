@@ -27,15 +27,15 @@ LOCAL_SHARED_LIBRARIES :=       \
     libui                       \
 
 LOCAL_C_INCLUDES := \
-        $(TOP)/frameworks/av-caf/media/libstagefright/timedtext           \
-	$(TOP)/frameworks/native-caf/include/media/hardware               \
-	$(TOP)/frameworks/native-caf/include/media/openmax                \
-	$(TOP)/frameworks/av-caf/media/libstagefright/httplive            \
-	$(TOP)/frameworks/av-caf/media/libmediaplayerservice/nuplayer     \
-	$(TOP)/frameworks/av-caf/media/libmediaplayerservice              \
-	$(TOP)/frameworks/av-caf/media/libstagefright/include             \
-	$(TOP)/frameworks/av-caf/media/libstagefright/mpeg2ts             \
-	$(TOP)/frameworks/av-caf/media/libstagefright/rtsp                \
+        $(TOP)/frameworks/av/media/libstagefright/timedtext           \
+	$(TOP)/frameworks/native/include/media/hardware               \
+	$(TOP)/frameworks/native/include/media/openmax                \
+	$(TOP)/frameworks/av/media/libstagefright/httplive            \
+	$(TOP)/frameworks/av/media/libmediaplayerservice/nuplayer     \
+	$(TOP)/frameworks/av/media/libmediaplayerservice              \
+	$(TOP)/frameworks/av/media/libstagefright/include             \
+	$(TOP)/frameworks/av/media/libstagefright/mpeg2ts             \
+	$(TOP)/frameworks/av/media/libstagefright/rtsp                \
 	$(TOP)/hardware/qcom/media-caf-msm8974/mm-core/inc                        \
 	$(TOP)/hardware/qcom/display-caf-msm8974/libgralloc                       \
     $(LOCAL_PATH)/../QCMediaPlayer/native                         \
@@ -57,4 +57,3 @@ ifndef TARGET_DISABLE_DASH
  include $(BUILD_SHARED_LIBRARY)
 endif
 endif
-

@@ -27,8 +27,8 @@ LOCAL_CFLAGS += -DMETADATA_FOR_DYNAMIC_MODE
 endif
 
 LOCAL_C_INCLUDES:= \
-        frameworks/native-caf/include/media/openmax \
-        frameworks/native-caf/include/media/hardware
+        frameworks/native/include/media/openmax \
+        frameworks/native/include/media/hardware
 
 LOCAL_SHARED_LIBRARIES :=       \
         libbinder               \
@@ -40,4 +40,3 @@ LOCAL_SHARED_LIBRARIES :=       \
 LOCAL_MODULE := libstagefrighthw
 
 include $(BUILD_SHARED_LIBRARY)
-

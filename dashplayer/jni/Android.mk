@@ -16,7 +16,7 @@ LOCAL_SHARED_LIBRARIES := \
 
 LOCAL_C_INCLUDES += \
     $(TOP)/frameworks/base/core/jni \
-    $(TOP)/frameworks/av-caf/media/libstagefright \
+    $(TOP)/frameworks/av/media/libstagefright \
     $(LOCAL_PATH)/../../QCMediaPlayer/native \
 
 LOCAL_MODULE:= libextmedia_jni

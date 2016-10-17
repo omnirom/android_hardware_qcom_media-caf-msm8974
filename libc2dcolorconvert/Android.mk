@@ -6,8 +6,8 @@ LOCAL_SRC_FILES := \
         C2DColorConverter.cpp
 
 LOCAL_C_INCLUDES := \
-    $(TOP)/frameworks/av-caf/include/media/stagefright \
-    $(TOP)/frameworks/native-caf/include/media/openmax \
+    $(TOP)/frameworks/av/include/media/stagefright \
+    $(TOP)/frameworks/native/include/media/openmax \
     $(TOP)/hardware/qcom/display-caf-msm8974/libcopybit \
     $(TARGET_OUT_HEADERS)/qcom/display-caf-msm8974/
 

@@ -88,7 +88,7 @@ libmm-venc-inc      += frameworks/native-caf/include/media/hardware
 libmm-venc-inc      += frameworks/native-caf/include/media/openmax
 libmm-venc-inc      += hardware/qcom/media-caf-msm8974/libc2dcolorconvert
 libmm-venc-inc      += hardware/qcom/display-caf-msm8974/libcopybit
-libmm-venc-inc      += frameworks/av-caf/include/media/stagefright
+libmm-venc-inc      += frameworks/av/include/media/stagefright
 libmm-venc-inc      += $(TARGET_OUT_HEADERS)/qcom/display-caf-msm8974/
 libmm-venc-inc      += $(venc-inc)
 
@@ -170,4 +170,3 @@ endif #BUILD_TINY_ANDROID
 # ---------------------------------------------------------------------------------
 # 					END
 # ---------------------------------------------------------------------------------
-

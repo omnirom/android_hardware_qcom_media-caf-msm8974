@@ -14,7 +14,7 @@ LOCAL_SHARED_LIBRARIES := \
     libutils \
 
 LOCAL_C_INCLUDES := \
-        $(TOP)/frameworks/av-caf/include/media \
+        $(TOP)/frameworks/av/include/media \
 
 LOCAL_MODULE:= libqcmediaplayer
 
