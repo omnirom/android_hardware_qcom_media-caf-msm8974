@@ -8329,7 +8329,7 @@ OMX_ERRORTYPE omx_vdec::allocate_output_headers()
                 sizeof(OMX_BUFFERHEADERTYPE),
                 nPMEMInfoSize,
                 nPlatformListSize);
-        DEBUG_PRINT_LOW("PE %d bmSize %"PRId64, nPlatformEntrySize,
+        DEBUG_PRINT_LOW("PE %d bmSize %" PRId64, nPlatformEntrySize,
                 m_out_bm_count);
         m_out_mem_ptr = (OMX_BUFFERHEADERTYPE  *)calloc(nBufHdrSize,1);
         // Alloc mem for platform specific info
@@ -9241,7 +9241,7 @@ void omx_vdec::append_user_extradata(OMX_OTHER_EXTRADATATYPE *extra,
     extra->nPortIndex = OMX_CORE_OUTPUT_PORT_INDEX;
     extra->eType = (OMX_EXTRADATATYPE)OMX_ExtraDataMP2UserData;
     extra->nDataSize = userdata_size;
-    if (extra->data && p_user->data && extra->nDataSize)
+    if (extra->nDataSize)
         memcpy(extra->data, p_user->data, extra->nDataSize);
     print_debug_extradata(extra);
 }
@@ -10053,4 +10053,3 @@ OMX_ERRORTYPE omx_vdec::describeColorFormat(OMX_PTR pParam) {
     return OMX_ErrorNone;
 #endif //FLEXYUV_SUPPORTED
 }
-
