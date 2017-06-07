@@ -244,6 +244,8 @@ LOCAL_VENDOR_MODULE             := true
 LOCAL_CFLAGS                    := $(libOmxVdec-def)
 LOCAL_C_INCLUDES                := $(mm-vdec-drv-test-inc)
 LOCAL_PRELINK_MODULE            := false
+LOCAL_SHARED_LIBRARIES        := liblog libcutils libutils
+LOCAL_SHARED_LIBRARIES        += libswvdec
 
 LOCAL_SRC_FILES                 := src/message_queue.c
 LOCAL_SRC_FILES                 += test/decoder_driver_test.c
