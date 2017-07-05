@@ -106,6 +106,9 @@ LOCAL_C_INCLUDES                := $(libmm-venc-inc)
 LOCAL_PRELINK_MODULE      := false
 LOCAL_SHARED_LIBRARIES    := liblog libutils libbinder libcutils \
                              libc2dcolorconvert libdl
+LOCAL_HEADER_LIBRARIES    := \
+    media_plugin_headers \
+    libhardware_headers \
 
 LOCAL_SRC_FILES   := src/omx_video_base.cpp
 LOCAL_SRC_FILES   += src/omx_video_encoder.cpp
