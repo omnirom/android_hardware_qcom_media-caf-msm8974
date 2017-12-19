@@ -66,6 +66,7 @@ ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #endif
 
 #include <qdMetaData.h>
+#include <nativebase/nativebase.h>
 
 #ifdef METADATA_FOR_DYNAMIC_MODE
 #include "QComOMXMetadata.h"
