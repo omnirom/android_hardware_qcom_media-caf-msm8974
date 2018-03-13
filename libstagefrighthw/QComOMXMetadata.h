@@ -23,17 +23,7 @@
 
 namespace android {
 
-#ifdef USE_NATIVE_HANDLE_SOURCE
-    typedef struct encoder_nativehandle_buffer_type {
-        MetadataBufferType buffer_type;
-        buffer_handle_t meta_handle;
-    } encoder_nativehandle_buffer_type;
-#endif
-
-    typedef struct encoder_media_buffer_type {
-        MetadataBufferType buffer_type;
-        buffer_handle_t meta_handle;
-    } encoder_media_buffer_type;
+typedef struct encoder_media_buffer_type {
 
 #ifdef METADATA_FOR_DYNAMIC_MODE
     // Meta data buffer layout used to transport output frames to the decoder for
@@ -43,6 +33,7 @@ namespace android {
         buffer_handle_t pHandle;
     };
 #endif
-}
+};
 
+}
 #endif
